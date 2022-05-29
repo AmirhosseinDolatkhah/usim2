@@ -1,0 +1,137 @@
+plugins {
+    id 'java'
+}
+
+group 'ahd.usim2'
+version '0.1-beta'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // lwjgl and its utils
+    implementation platform('org.lwjgl:lwjgl-bom:3.3.1')
+
+    implementation 'org.joml:joml:1.10.4'
+    runtimeOnly 'org.joml:joml-primitives:1.10.0'
+
+    implementation 'org.lwjgl:lwjgl:3.3.1'
+    implementation 'org.lwjgl:lwjgl-assimp:3.3.1'
+    implementation 'org.lwjgl:lwjgl-bgfx:3.3.1'
+    implementation 'org.lwjgl:lwjgl-cuda:3.3.1'
+    implementation 'org.lwjgl:lwjgl-egl:3.3.1'
+    implementation 'org.lwjgl:lwjgl-glfw:3.3.1'
+    implementation 'org.lwjgl:lwjgl-jawt:3.3.1'
+    implementation 'org.lwjgl:lwjgl-jemalloc:3.3.1'
+    implementation 'org.lwjgl:lwjgl-libdivide:3.3.1'
+    implementation 'org.lwjgl:lwjgl-llvm:3.3.1'
+    implementation 'org.lwjgl:lwjgl-lmdb:3.3.1'
+    implementation 'org.lwjgl:lwjgl-lz4:3.3.1'
+    implementation 'org.lwjgl:lwjgl-meow:3.3.1'
+    implementation 'org.lwjgl:lwjgl-nanovg:3.3.1'
+    implementation 'org.lwjgl:lwjgl-nfd:3.3.1'
+    implementation 'org.lwjgl:lwjgl-nuklear:3.3.1'
+    implementation 'org.lwjgl:lwjgl-odbc:3.3.1'
+    implementation 'org.lwjgl:lwjgl-openal:3.3.1'
+    implementation 'org.lwjgl:lwjgl-opencl:3.3.1'
+    implementation 'org.lwjgl:lwjgl-opengl:3.3.1'
+    implementation 'org.lwjgl:lwjgl-opengles:3.3.1'
+    implementation 'org.lwjgl:lwjgl-openvr:3.3.1'
+    implementation 'org.lwjgl:lwjgl-opus:3.3.1'
+    implementation 'org.lwjgl:lwjgl-ovr:3.3.1'
+    implementation 'org.lwjgl:lwjgl-par:3.3.1'
+    implementation 'org.lwjgl:lwjgl-remotery:3.3.1'
+    implementation 'org.lwjgl:lwjgl-rpmalloc:3.3.1'
+    implementation 'org.lwjgl:lwjgl-shaderc:3.3.1'
+    implementation 'org.lwjgl:lwjgl-sse:3.3.1'
+    implementation 'org.lwjgl:lwjgl-stb:3.3.1'
+    implementation 'org.lwjgl:lwjgl-tinyexr:3.3.1'
+    implementation 'org.lwjgl:lwjgl-tinyfd:3.3.1'
+    implementation 'org.lwjgl:lwjgl-tootle:3.3.1'
+    implementation 'org.lwjgl:lwjgl-vma:3.3.1'
+    implementation 'org.lwjgl:lwjgl-vulkan:3.3.1'
+    implementation 'org.lwjgl:lwjgl-xxhash:3.3.1'
+    implementation 'org.lwjgl:lwjgl-yoga:3.3.1'
+    implementation 'org.lwjgl:lwjgl-zstd:3.3.1'
+
+    runtimeOnly 'org.lwjgl:lwjgl::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-assimp::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-bgfx::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-glfw::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-jemalloc::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-libdivide::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-llvm::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-lmdb::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-lz4::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-meow::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-nanovg::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-nfd::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-nuklear::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-openal::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-opengl::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-opengles::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-openvr::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-opus::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-ovr::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-par::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-remotery::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-rpmalloc::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-shaderc::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-sse::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-stb::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-tinyexr::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-tinyfd::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-tootle::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-vma::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-xxhash::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-yoga::natives-windows'
+    runtimeOnly 'org.lwjgl:lwjgl-zstd::natives-windows'
+    // lwjgl and its utils
+
+
+    // swing utils
+    implementation 'com.fifesoft:rsyntaxtextarea:3.2.0'
+    implementation 'com.formdev:flatlaf:2.2'
+    implementation 'com.formdev:flatlaf-intellij-themes:2.2'
+    implementation 'com.miglayout:miglayout-swing:11.0'
+    implementation 'uk.co.caprica:vlcj:4.7.2'
+    // end of swing utils
+
+
+    // network utils
+    implementation 'org.pcap4j:pcap4j-core:1.8.2'
+    implementation 'org.pcap4j:pcap4j-packetfactory-static:1.8.2'
+    implementation 'net.sourceforge.htmlunit:htmlunit:2.61.0'
+    // end of network utils
+
+
+    // common utils
+    implementation 'org.apache.pdfbox:pdfbox:3.0.0-RC1'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'org.apache.commons:commons-csv:1.9.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'org.jetbrains:annotations:23.0.0'
+    implementation 'com.github.sarxos:webcam-capture:0.3.12'
+    // end of common utils
+
+
+    // temp libs
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'commons-cli:commons-cli:1.5.0'
+    implementation 'net.sf.saxon:Saxon-HE:11.3'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'net.java.dev.glazedlists:glazedlists_java15:1.9.1'
+    implementation 'uk.co.caprica:native-streams:2.0.0'
+    implementation 'org.apache.xmlgraphics:batik-svg-dom:1.14'
+    implementation 'net.bramp.ffmpeg:ffmpeg:0.7.0'
+    // end of temp libs
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+test {
+    useJUnitPlatform()
+}
